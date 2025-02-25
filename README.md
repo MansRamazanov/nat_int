@@ -1,33 +1,41 @@
-# nat_int
 
-This template should help get you started developing with Vue 3 in Vite.
+## Установка
 
-## Recommended IDE Setup
+1. Клонируйте репозиторий:
+```bash
+git clone <repository-url>
+cd <project-directory>
+```
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+2. Установите зависимости:
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## Запуск
 
-```sh
+Для запуска в режиме разработки:
+```bash
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
 
-```sh
-npm run build
-```
+
+## Тестирование функционала
+
+
+- Откройте приложение в браузере
+- Введите свои учетные данные Matrix
+- Нажмите "Войти"
+- После входа должен отобразиться список ваших комнат
+- Комнаты можно сортировать по времени последнего сообщения или по алфавиту
+- Для каждой комнаты отображается:
+  - Название
+  - Последнее сообщение
+  - Счетчик непрочитанных сообщений
+
+## Проблемы
+- При вызове метода getUnreadNotificationCount приходит 0. Мб нужно зайти с другого пользователя в комнату и отправить сообщение, тк сообщения которые отправил я могут не отображаться как непрочитанные
+- Приходит url с аватаркой комнаты, но картинки там нет ("error":"Not found"). В доке написано что может потребоваться sw, я его добавил ничего не поменялось
+
+
